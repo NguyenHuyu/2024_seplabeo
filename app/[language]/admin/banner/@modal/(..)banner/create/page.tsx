@@ -1,0 +1,15 @@
+import React from 'react'
+import Modal from '@/components/modal'
+import CardForm from '@/components/card-form'
+import { IProps } from '@/app/[language]/layout'
+import BannerForm from '../../../_components/banner-form'
+
+export default async function page({ params }: IProps) {
+  return (
+    <Modal classNames='top-28 sm:max-w-xl md:top-10 md:max-w-lg lg:max-w-xl xl:max-w-3xl 2xl:max-w-5xl'>
+      <CardForm label={`Tạo mới banner`}>
+        <BannerForm />
+      </CardForm>
+    </Modal>
+  )
+}

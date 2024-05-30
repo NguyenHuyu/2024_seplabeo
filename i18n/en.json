@@ -1,0 +1,171 @@
+{
+  "welcome":"Welcome to Seplabeo in Viet Nam",
+  "more_card":"Read more",
+  "navbar": {
+    "title_1_1":"Directory",
+    "title_1": "Home",
+    "title_2": "About Us",
+    "title_3": "Applications",
+    "title_4": "Quang Vy Cordyceps",
+    "title_5": "Products"
+  },
+  "center":{
+    "title_1":"Connecting Successful, Bring science to the life",
+    "title_2":"OUR FOCUS APPLICATIONS"
+  },
+  "about":{
+    "title_1":"Company",
+    "title_2":"Contact Us"
+  },
+  "blogs":{
+    "title_1":"News",
+    "title_2":"Search"
+  },
+  "navbar_title_3":{
+    "title_1": "Beverage",
+    "title_2": "Dairy - Desserts",
+    "title_3": "Bakary & Confectionery",
+    "title_4": "Convenience Food, Meat & Seafood processing",
+    "title_5": "Seafood & Commodity",
+    "title_6": "Functional Food"
+  },
+  "banner":{
+    "sub":"Discover"
+  },
+  "multiple": {
+    "title": "Create multiple"
+  },
+  "contact":{
+    "title_1":"Contact Us",
+    "title_2":"Speak with a member of our team",
+    "title_3":"Email us at salesdep.sep@gmail.com or message us here",
+    "title_3_1":"Hotline: 0968341122 – 0973006622 – 0961097953",
+    "title_4":"Address: Loc Son Hamlet, Loc Thuan Commune, Binh Dai District, Ben Tre Province",
+    "title_5":"Your name",
+    "title_6":"Your email",
+    "title_7":"Your company",
+    "title_8":"Your country",
+    "title_9":"Your department",
+    "title_10":"Your message",
+    "title_11":"Submit"
+  },
+  "footer":{
+    "title_1":"SEPLABEO TRADINH AND SERVICE COMPANY LIMITED"
+  },
+
+  "company":{
+    "company_title":"SEPLABEO TRADING AND SERVICE CO., LTD",
+    "company_address":"Address: Loc Son Hamlet, Loc Thuan Commune, Binh Dai District, Ben Tre Province",
+    "company_phone_1":"Phone: 02753 855125.",
+    "company_phone_2":"Hot line: 0968341122 – 0973006622- 0961097953",
+    "company_email":"Email: salesdep.sep@gmail.com",
+    "company_process":"History process",
+    "company_process_1":"Establishment of SEPLABEO Company Starting with raw materials for seafood, focusing mainly on shrimp farming industry",
+    "company_process_2":"Seplabeo expands its business into the food industry with additive ingredients imported from leading suppliers in the world",
+    "company_process_3":"Seplabeo has a strong focus on the food industry, by constantly expanding, seeking partnerships in the international market",
+    "company_process_4":"Seplabeo invests in production with Cordycep mushroom and Cordycep Alchohol factory",
+    "company_sub_1":"In addition to providing additive materials with superior quality, we are always ready to listen and support customers to find new solutions, applications, innovations to improve and increase production efficiency",
+    "company_vision":"VISION",
+    "company_vision_sub":"Become a leading company in providing food additives and nutritional products for health",
+    "company_mission":"MISSION",
+    "company_mission_sub":"Successfully connect, bring science and technology to life. We connect and bring customers new scientific and technological applications in the world to production in Vietnam, and at the same time connect local and international businesses",
+    "company_value":"CORE VALUES",
+    "company_value_sub":"Integrity and innovation; create a common, open and mutually beneficial commitment; Create a healthy and beautiful life",
+    "company_philosophy":"Business Philosophy",
+    "company_philosophy_sub":"Put prestige, high quality of service/goods and sustainability first"
+  },
+
+  "cordyceps":{
+    "welcome":"Welcome !",
+    "cordyceps_name":"Quang Vy Cordyceps from Coconut essence",
+    "cordyceps_title":[
+      "Love connecting, golden health giving  ",
+      "Healthy living solutions for your family",
+      "Do not use worm/pupa substrates"
+    ],
+    "cordyceps_bold": "Especially, for both Vegetarian and Non vegetarian",
+    "product":"Products",
+    "product_sub":"(Cordyceps Quang Vy coconut essence!)",
+    "contact":"Contact us",
+    "email":"dthtquangvy@gmail.com",
+    "phone":"Hot line: 0973006622 – 0961097953",
+    "intro":"About us",
+    "more":"More information for you",
+
+    "product_1":"Quang Vy Cordyceps factory has been started construction.",
+    "product_2":"The facilities come into operation with scientific team from Ho Chi Minh City University of Science and Can Tho University."
+
+  },
+
+  "beverage":{
+    "title": "Beverage",
+    "descriptions":[
+        "Bird Nest Drink",
+        "Juice",
+        "Sport Drinks",
+        "Plant Base Drinks",
+        "Instant Coffee - Tea",
+        "Energy Drinks",
+        "Carbonates"
+    ],
+        "contact":"Contact us"
+
+  },
+  "dairy_dessert":{
+    "title": "Dairy - Desserts",
+    "descriptions":[
+        "Neutral milk",
+        "Acidified milk",
+        "Chocolate milk",
+        "Drinking yoghurt",
+        "Instant 3in1 coffee",
+        "Coconut milk",
+        "Ice cream"
+    ],
+    "contact":"Contact us"
+
+  },
+  "bakery":{
+    "title": "Bakery & Confectionery",
+    "descriptions":[
+        "Cakes",
+        "Bread",
+        "Pastries",
+        "Cereals",
+        "Confertionery",
+        "Chocolate"
+    ],
+    "contact":"Contact us"
+  },
+  "food":{
+    "title": "Convenience Foods, Meat and seafood processing",
+    "descriptions":[
+        "Fish Sauce",
+        "Soya sauce",
+        "Instant noodle",
+        "Chilli Sacue",
+        "Seasoning",
+        "Sausage",
+        "Beef/Chicken Ball"
+    ],
+    "contact":"Contact us"
+
+  },
+  "seafood":{
+    "title": "Seafood & Commodity",
+    "descriptions":[
+        "Surimi",
+        "Frozen Processed",
+        "Shrimp/Chicken powder"
+    ],
+    "contact":"Contact us"
+  },
+  "funcfood":{
+    "title": "Functional Food",
+    "descriptions":[
+        "The demand for nutritious foods that protect health is increasing. Functional foods ingredients also need to strictly follow health and safety standards. Therefore, a good source of raw materials, flavorings and additives plays an important role in the success of the business. Seplabeo can help you achieve that with the most effectiness"
+    ],
+    "contact":"Contact us"
+
+  }
+}

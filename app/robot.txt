@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://seplabeo.com/sitemap.xml
+
+Disallow: /admin
+Disallow: /login

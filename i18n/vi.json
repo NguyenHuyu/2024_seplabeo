@@ -1,0 +1,164 @@
+{
+  "welcome":"Chào mừng, SepLaBeo tại Việt Nam",
+  "more_card":"Xem thêm",
+  "navbar": {
+    "title_1_1":"Danh mục",
+    "title_1": "Trang chủ",
+    "title_2": "Giới thiệu",
+    "title_3": "Ứng dụng",
+    "title_4": "Đông trùng hạ thảo Quang Vy Tinh chất dừa",
+    "title_5": "Sản phẩm"
+  },
+  "center":{
+    "title_1":"Kết nối thành công, mang khoa học kỹ thuật vào đời sống",
+    "title_2":"ỨNG DỤNG TRỌNG TÂM"
+  },
+  "about":{
+    "title_1":"Công ty",
+    "title_2":"Liên hệ"
+  },
+  "blogs":{
+    "title_1":"Tin tức",
+    "title_2":"Tìm"
+  },
+  "navbar_title_3":{
+    "title_1": "Nước giải khát",
+    "title_2": "Sữa và tráng miệng",
+    "title_3": "Bánh kẹo",
+    "title_4": "Thực phẩm tiện dụng và các sản phẩm chế biến từ thịt và thủy sản",
+    "title_5": "Hải sản và sản phẩm phổ biến",
+    "title_6": "Thực phẩm chức năng"
+  },
+  "banner":{
+    "sub":"Khám phá"
+  },
+  "multiple": {
+    "title": "Tạo mới"
+  },
+  "contact":{
+    "title_1":"Liên hệ",
+    "title_2":"Nói chuyện với một thành viên trong nhóm của chúng tôi",
+    "title_3":"Gửi email cho chúng tôi theo địa chỉ salesdep.sep@gmail.com hoặc nhắn tin cho chúng tôi tại đây",
+    "title_3_1":"Hotline: 0968341122 – 0973006622 – 0961097953",
+    "title_4":"Địa chỉ: Ấp Lộc Sơn, xã Lộc Thuận, huyện Bình Đại, tỉnh Bến Tre",
+    "title_5":"Tên",
+    "title_6":"Emai",
+    "title_7":"Công ty",
+    "title_8":"Quốc gia",
+    "title_9":"Lĩnh vực",
+    "title_10":"Lời nhắn",
+    "title_11":"Gửi"
+  },
+  "footer":{
+    "title_1":"CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ SEPLABEO"
+  },
+  "company":{
+    "company_title":"CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ SEPLABEO",
+    "company_address":"Địa chỉ: Ấp Lộc Sơn, xã Lộc Thuận, huyện Bình Đại, tỉnh Bến Tre",
+    "company_phone_1":"SĐT: 02753 855125.",
+    "company_phone_2":"Hot line: 0968341122 – 0973006622- 0961097953",
+    "company_email":"Email: salesdep.sep@gmail.com",
+    "company_process":"Quá trình phát triển",
+    "company_process_1":"Thành lập công ty SEPLABEO Bắt đầu với các nguyên liệu cho thủy sản, tập trung chủ yếu vào ngành nuôi tôm",
+    "company_process_2":"Seplabeo mở rộng kinh doanh sang ngành công nghiệp thực phẩm với các nguyên liệu phụ gia nhập khẩu từ các nhà cung cấp hàng đầu trên thế giới",
+    "company_process_3":"Seplabeo tập trung mạnh vào ngành thực phẩm, bằng việc không ngừng mở rộng, tìm kiếm các quan hệ đối tác trên trường quốc tế",
+    "company_process_4":"Seplabeo đầu tư vào sản xuất với xưởng sản xuất Nấm và Rượu Đông Trùng Hạ Thảo",
+    "company_sub_1":"Ngoài việc cung cấp các nguyên liệu phụ gia với chất lượng ưu việt, chúng tôi luôn luôn sẵn sàng lắng nghe hỗ trợ khách hàng tìm ra các giải pháp, ứng dụng mới, phát kiến để cải thiện, nâng cao hiệu quả sản xuất",
+    "company_vision":"TẦM NHÌN",
+    "company_vision_sub":"Trở thành công ty hàng đầu trong việc cung cấp phụ gia thực phẩm và các sản phẩm dinh dưỡng cho sức khỏe",
+    "company_mission":"SỨ MỆNH",
+    "company_mission_sub":"Kết nối thành công, mang khoa học kỹ thuật vào đời sống. Chúng tôi kết nối và mang đến cho khách hàng các ứng dụng khoa học công nghệ mới trên thế giới vào sản xuất tại Việt Nam, đồng thời kết nối các doanh nghiệp địa phương và quốc tế",
+    "company_value":"GIÁ TRỊ CỐT LÕI",
+    "company_value_sub":"Chính trực và đổi mới; tạo ra cam kết chung, cởi mở và đôi bên cùng có lợi; Tạo ra một cuộc sống lành mạnh và tươi đẹp",
+    "company_philosophy":"Triết lý kinh doanh",
+    "company_philosophy_sub":"Đặt sự uy tín, chất lượng dịch vụ, hàng hóa và sự bền vững lên hàng đầu"
+  },
+
+  "cordyceps":{
+    "welcome":"Xin chào !",
+    "cordyceps_name":"Đông trùng hạ thảo Quang Vy Tinh chất dừa",
+    "cordyceps_title":[
+      "Kết nối yêu thương, trao sức khỏe vàng",
+      "Giải pháp sống khỏe cho cả gia đình",
+      "Không dùng cơ chất sâu nhộng"
+    ],
+    "cordyceps_bold":"Đặc biệt, Chay Mặn đều dùng được",
+    "product":"Sản phẩm ",
+    "product_sub":"(Đông Trùng Hạ Thảo Quang Vy tinh chất dừa!)",
+    "contact":"Liên hệ",
+    "email":"dthtquangvy@gmail.com",
+    "phone":"Hot line: 0973006622 – 0961097953",
+    "intro":"Giới thiệu",
+    "more":"Thông tin thêm dành cho bạn",
+
+    "product_1": "Xưởng nấm ĐTHT Quang Vy bắt đầu khởi công.",
+    "product_2": "Xưởng bắt đầu đi vào hoạt động với đội ngũ các nhà khoa học ĐH KHTN, ĐH Cần Thơ."
+  },
+  "beverage":{
+    "title": "Nước giải khát",
+    "descriptions":[
+        "Bird Nest Drink",
+        "Juice",
+        "Sport Drinks",
+        "Plant Base Drinks",
+        "Instant Coffee - Tea",
+        "Energy Drinks",
+        "Carbonates"
+    ],
+    "contact":"Liên hệ"
+  },
+  "dairy_dessert":{
+    "title": "Sữa - Tráng miệng",
+    "descriptions":[
+        "Neutral milk",
+        "Acidified milk",
+        "Chocolate milk",
+        "Drinking yoghurt",
+        "Instant 3in1 coffee",
+        "Coconut milk",
+        "Ice cream"
+    ],
+    "contact":"Liên hệ"
+  },
+  "bakery":{
+    "title": "Bánh kẹo",
+    "descriptions":[
+        "Cakes",
+        "Bread",
+        "Pastries",
+        "Cereals",
+        "Confertionery",
+        "Chocolate"
+    ],
+    "contact":"Liên hệ"
+  },
+  "food":{
+    "title": "Thực phẩm tiện dụng và các sản phẩm chế biến từ thịt và thủy sản",
+    "descriptions":[
+        "Fish Sauce",
+        "Soya sauce",
+        "Instant noodle",
+        "Chilli Sacue",
+        "Seasoning",
+        "Sausage",
+        "Beef/Chicken Ball"
+    ],
+    "contact":"Liên hệ"
+  },
+  "seafood":{
+    "title": "Hải sản và Sản phẩm phổ biến",
+    "descriptions":[
+        "Surimi",
+        "Frozen Processed",
+        "Shrimp/Chicken powder"
+    ],
+    "contact":"Liên hệ"
+  },
+  "funcfood":{
+    "title": "Thực phẩm chức năng",
+    "descriptions":[
+        "Nhu cầu về thực phẩm dinh dưỡng bảo vệ sức khỏe ngày càng tăng. Nguyên liệu thực phẩm chức năng cũng cần tuân thủ nghiêm ngặt các quy chuẩn về an toàn và sức khỏe. Do đó, một nguồn nguyên liệu, hương liệu và phụ gia tốt đóng vai trò quan trọng trong sự thành công của doanh nghiệp. Seplabeo có thế giúp bạn làm được điều đó với sự hiệu quả nhất"
+    ],
+    "contact":"Liên hệ"
+  }
+}
