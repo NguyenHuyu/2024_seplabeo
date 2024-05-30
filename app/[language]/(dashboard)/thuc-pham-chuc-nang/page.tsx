@@ -1,11 +1,11 @@
-import { getDictionary } from '@/dictionaries'
-import { PageProps } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { IProps } from '../../layout'
+import { getDictionary } from '@/lib/dictionaries'
 
-export async function generateMetadata({ params }: PageProps) {
-  if (params.lang === 'vi') {
+export async function generateMetadata({ params }: IProps) {
+  if (params.language === 'vi') {
     return {
       title: 'Seplabeo | Thực phẩm chức năng',
       description: 'Seplabeo - CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ SEPLABEO'
@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: PageProps) {
   }
 }
 
-export default async function page({ params }: PageProps) {
-  const { funcfood } = await getDictionary(params.lang)
+export default async function page({ params }: IProps) {
+  const { funcfood } = await getDictionary(params.language)
 
   return (
     <section className='bg-white'>
@@ -40,7 +40,10 @@ export default async function page({ params }: PageProps) {
             </h1>
             <div className='gap-4 items-start justify-center '>
               {funcfood.descriptions.map((item, index) => (
-                <li key={index} className='text-justify mb-1 text-base font-normal leading-7 lg:w-3/4 text-grey-900'>
+                <li
+                  key={index}
+                  className='text-justify mb-1 text-base font-normal leading-7 lg:w-3/4 text-grey-900'
+                >
                   {item}
                 </li>
               ))}
@@ -50,7 +53,7 @@ export default async function page({ params }: PageProps) {
                 Get started now
               </button>
               <Link
-                href={`/${params.lang}/contact`}
+                href={`/${params.language}/contact`}
                 className='flex items-center py-4 text-sm font-medium px-7 text-dark-grey-700 hover:text-dark-grey-900 transition duration-300 rounded-2xl'
               >
                 <svg
@@ -70,7 +73,13 @@ export default async function page({ params }: PageProps) {
             </div>
           </div>
           <div className='items-center justify-end col-span-1 md:flex'>
-            <Image className='w-full md:w-4/5 rounded-md' src='/a6.png' alt='header image' width={1000} height={1000} />
+            <Image
+              className='w-full md:w-4/5 rounded-md'
+              src='/a6.png'
+              alt='header image'
+              width={1000}
+              height={1000}
+            />
           </div>
         </div>
       </div>
