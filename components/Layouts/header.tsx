@@ -65,11 +65,11 @@ const navbarVI = [
       }
     ]
   },
-  {
-    label: 'Sản phẩm',
-    href: 'san-pham',
-    subItems: []
-  },
+  // {
+  //   label: 'Sản phẩm',
+  //   href: 'san-pham',
+  //   subItems: []
+  // },
   {
     label: 'Đông trùng hạ thảo Quang Vy',
     href: 'dong-trung-ha-thao-quang-vy',
@@ -130,11 +130,11 @@ const navbarSVI = [
       }
     ]
   },
-  {
-    label: 'Sản phẩm',
-    href: 'san-pham',
-    subItems: []
-  },
+  // {
+  //   label: 'Sản phẩm',
+  //   href: 'san-pham',
+  //   subItems: []
+  // },
   {
     label: 'Đông trùng hạ thảo Quang Vy',
     href: 'dong-trung-ha-thao-quang-vy',
@@ -195,11 +195,11 @@ const navbarEN = [
       }
     ]
   },
-  {
-    label: 'Products',
-    href: 'san-pham',
-    subItems: []
-  },
+  // {
+  //   label: 'Products',
+  //   href: 'san-pham',
+  //   subItems: []
+  // },
   {
     label: 'Quang Vy Cordyceps',
     href: 'dong-trung-ha-thao-quang-vy',
@@ -260,11 +260,11 @@ const navbarSEN = [
       }
     ]
   },
-  {
-    label: 'Products',
-    href: 'san-pham',
-    subItems: []
-  },
+  // {
+  //   label: 'Products',
+  //   href: 'san-pham',
+  //   subItems: []
+  // },
   {
     label: 'Quang Vy Cordyceps',
     href: 'dong-trung-ha-thao-quang-vy',

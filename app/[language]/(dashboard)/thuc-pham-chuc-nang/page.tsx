@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { IProps } from '../../layout'
+import A6 from '@/public/a6.png'
 import { getDictionary } from '@/lib/dictionaries'
 
 export async function generateMetadata({ params }: IProps) {
@@ -24,7 +25,7 @@ export default async function page({ params }: IProps) {
   return (
     <section className='bg-white'>
       <div className='container flex flex-col mx-auto bg-white'>
-        <div className='grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5'>
+        <div className='grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 md:gap-5'>
           <div className='flex flex-col justify-center col-span-1 text-center lg:text-start'>
             <div className='flex items-center justify-center mb-4 lg:justify-normal'>
               <Image
@@ -35,7 +36,7 @@ export default async function page({ params }: IProps) {
                 width={50}
               />
             </div>
-            <h1 className='mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900'>
+            <h1 className='mb-8 text-4xl font-extrabold leading-tight text-dark-grey-900'>
               {funcfood.title}
             </h1>
             <div className='gap-4 items-start justify-center '>
@@ -72,10 +73,10 @@ export default async function page({ params }: IProps) {
               </Link>
             </div>
           </div>
-          <div className='items-center justify-end col-span-1 md:flex'>
+          <div className='items-center justify-end md:flex w-full'>
             <Image
               className='w-full md:w-4/5 rounded-md'
-              src='/a6.png'
+              src={A6}
               alt='header image'
               width={1000}
               height={1000}

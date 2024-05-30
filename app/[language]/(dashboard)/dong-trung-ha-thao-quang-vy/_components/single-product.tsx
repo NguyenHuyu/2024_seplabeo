@@ -1,8 +1,6 @@
 import { getProductById } from '@/actions/product.action'
 import MainTiptap from '@/components/tiptap/main-tiptap'
-import RenderTiptap from '@/components/tiptap/render-tiptap'
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
-import { Scrollbar } from '@radix-ui/react-scroll-area'
 import Image from 'next/image'
 
 export const SingleProduct = async ({ id }: { id: string }) => {

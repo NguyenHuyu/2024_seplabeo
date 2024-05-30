@@ -10,7 +10,7 @@ import Image from 'next/image'
 import RenderTiptap from '@/components/tiptap/render-tiptap'
 
 export async function generateMetadata({ params }: IProps): Promise<Metadata> {
-  const news = await getNewById(getUrlParams(params.id))
+  const news = await getNewById(getUrlParams(params.id || ''))
   return {
     title: news?.title,
     description: news?.description,
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: IProps): Promise<Metadata> {
 export default async function page({ params }: IProps) {
   const route = `/${params.language}`
 
-  const data = await getNewById(getUrlParams(params.id))
+  const data = await getNewById(getUrlParams(params.id || ''))
 
   const breadCrumbs: IBreadcrumb[] = [
     {

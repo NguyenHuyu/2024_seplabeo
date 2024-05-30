@@ -1,8 +1,9 @@
+import React from 'react'
+import A5 from '@/public/a5.png'
 import { getDictionary } from '@/lib/dictionaries'
 import { Locale } from '@/i18n.config'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 interface PageProps {
   params: {
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: PageProps) {
 }
 
 export default async function page({ params }: PageProps) {
-  const { seafood } = await getDictionary(params.lang)
+  const { seafood } = await getDictionary(params.language)
 
   return (
     <section className='bg-white'>
@@ -41,10 +42,10 @@ export default async function page({ params }: PageProps) {
                 width={50}
               />
             </div>
-            <h1 className='mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900'>
+            <h1 className='mb-8 text-4xl font-extrabold leading-tight text-dark-grey-900'>
               {seafood.title}
             </h1>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 items-start justify-center '>
+            <div className='grid grid-cols-1 gap-4 items-start justify-center '>
               {seafood.descriptions.map((item, index) => (
                 <li
                   key={index}
@@ -59,7 +60,7 @@ export default async function page({ params }: PageProps) {
                 Get started now
               </button>
               <Link
-                href={`/${params.lang}/contact`}
+                href={`/${params.language}/contact`}
                 className='flex items-center py-4 text-sm font-medium px-7 text-dark-grey-700 hover:text-dark-grey-900 transition duration-300 rounded-2xl'
               >
                 <svg
@@ -81,7 +82,7 @@ export default async function page({ params }: PageProps) {
           <div className='items-center justify-end col-span-1 md:flex'>
             <Image
               className='w-full md:w-4/5 rounded-md'
-              src='/a5.png'
+              src={A5}
               alt='header image'
               width={1000}
               height={1000}

@@ -42,10 +42,10 @@ export default async function page({ params }: PageProps) {
                 width={50}
               />
             </div>
-            <h1 className='mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900'>
+            <h1 className='mb-8 text-4xl font-extrabold leading-tight  text-dark-grey-900'>
               {food.title}
             </h1>
-            <div className='grid grid-cols-2 md:grid-cols-2 gap-4 items-start justify-center '>
+            <div className='grid grid-cols-2 gap-4 items-start justify-center '>
               {food.descriptions.map((item, index) => (
                 <li
                   key={index}
