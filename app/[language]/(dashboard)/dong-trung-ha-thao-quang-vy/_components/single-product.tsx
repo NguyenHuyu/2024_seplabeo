@@ -12,24 +12,24 @@ export const SingleProduct = async ({ id }: { id: string }) => {
   }
 
   return (
-    <div className='grid grid-cols-3 gap-6 md:py-10'>
-      <div className='col-span-full lg:col-span-1'>
-        <div className=' space-y-2'>
+    <div className='grid lg:grid-cols-3 gap-6 md:py-10'>
+      <div className='col-span-full w-full lg:col-span-1'>
+        <div className='space-y-2'>
           <Image
             src={product?.imageUrl}
-            className='hidden rounded-lg lg:block w-[300px]'
+            className='rounded-lg lg:block md:w-full shadow-gray-800 lg:w-[300px] object-cover '
             alt={product?.name}
             height={400}
             width={400}
           />
           {product.picture.length > 1 ? (
-            <ScrollArea className='w-[19rem] whitespace-nowrap rounded-md border'>
+            <ScrollArea className='w-[19rem] whitespace-nowrap rounded-md md:border'>
               <div className='flex w-max space-x-2 p-1'>
                 {product?.picture.map((image, index) => (
-                  <div className='w-40' key={index}>
+                  <div className='w-20  md:w-40' key={index}>
                     <Image
                       src={image}
-                      className='h-32 object-cover'
+                      className='h-20 md:h-32 object-cover'
                       alt={product?.name}
                       priority
                       height={180}
@@ -41,13 +41,13 @@ export const SingleProduct = async ({ id }: { id: string }) => {
               <ScrollBar orientation='horizontal' />
             </ScrollArea>
           ) : (
-            <ScrollArea className='w-[10rem] whitespace-nowrap rounded-md border'>
+            <ScrollArea className='w-[10rem] whitespace-nowrap rounded-md md:border'>
               <div className='flex w-max space-x-2 p-1'>
                 {product?.picture.map((image, index) => (
-                  <div className='w-40' key={index}>
+                  <div className='w-20 md:w-40' key={index}>
                     <Image
                       src={image}
-                      className='h-32 object-cover'
+                      className='h-20 md:h-32 object-cover'
                       alt={product?.name}
                       priority
                       height={180}
@@ -62,11 +62,11 @@ export const SingleProduct = async ({ id }: { id: string }) => {
         </div>
       </div>
       <div className='col-span-full space-y-4 lg:col-span-2'>
-        <div className='flex justify-between'>
+        <div className='flex justify-between items-center'>
           <div className='bg-gradient-to-tr from-cyan-400 to-blue-300 p-4  rounded-full shadow-2xl shadow-orange-400 border-white  border-dashed border-2  flex justify-center items-center '>
             <h1 className='text-black text-sm'>Liên hệ: 0973006622</h1>
           </div>
-          <button className='text-sm mt-6 px-4 py-2 bg-orange-400  text-white rounded-lg  tracking-wider hover:bg-orange-500 outline-none'>
+          <button className='text-sm px-4 py-2 bg-orange-400  text-white rounded-lg  tracking-wider hover:bg-orange-500 outline-none'>
             + {formatNumber(product?.price)} VNĐ
           </button>
         </div>

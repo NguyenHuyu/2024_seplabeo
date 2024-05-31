@@ -14,7 +14,10 @@ interface Props {
 
 export default function ListNews({ item, params }: Props) {
   return (
-    <figure key={item.url} className='w-full border rounded-t-lg'>
+    <figure
+      key={item.url}
+      className='w-full  rounded-t-lg shadow-lg border border-blue-200 shadow-blue-100 my-2'
+    >
       <div className='overflow-hidden rounded-md w-[200px]'>
         <Image
           src={item.image}

@@ -43,7 +43,7 @@ export default function WrapperPage({
       </div>
 
       {title && (
-        <h1 className='text-center text-lg md:text-2xl font-bold py-1 text-red-500 max-w-5xl mx-auto'>
+        <h1 className='text-justify md:text-center text-lg md:text-2xl font-bold p-3 md:p-1 text-red-500 max-w-5xl mx-auto'>
           {title}
         </h1>
       )}

@@ -15,6 +15,7 @@ import Link from 'next/link'
 import LogoutButton from '@/components/logout-button'
 import { getSession } from '@/hooks/getSession'
 import { redirect } from 'next/navigation'
+import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
 
 interface Props {
   params: {
@@ -43,9 +44,14 @@ export default async function page({ children, params }: Props) {
       name: 'Sản phẩm',
       url: `/vi/admin/product`
     }
+    // {
+    //   name: 'Video',
+    //   url: `/vi/admin/video`
+    // }
   ]
+
   return (
-    <div className='flex min-h-screen w-full flex-col'>
+    <div className='flex min-h-screen  w-full flex-col'>
       <header className='z-30 sticky top-0 flex h-16 items-center gap-4 border-b bg-background justify-between px-4'>
         <nav className='hidden gap-6 text-lg font-medium md:flex md:flex-row  md:items-center md:gap-5 md:text-sm lg:gap-6 w-full'>
           <Link
@@ -111,7 +117,7 @@ export default async function page({ children, params }: Props) {
       </header>
 
       <main className='flex min-h-[calc(100vh_-_theme(spacing.16))] flex-1 flex-col gap-4 bg-muted/40 p-1'>
-        <div className='mx-auto grid w-full max-w-6xl gap-2'>
+        <div className='hidden md:grid mx-auto  w-full max-w-6xl gap-2'>
           <h1 className='text-3xl font-semibold'>Dashboard</h1>
         </div>
         <div className='mx-auto grid w-full max-w-6xl items-start gap-6 md:grid-cols-[180px_1fr] lg:grid-cols-[250px_1fr]'>
@@ -126,7 +132,10 @@ export default async function page({ children, params }: Props) {
               </Link>
             ))}
           </nav>
-          <div>{children}</div>
+          <ScrollArea className='w-full md:w-full whitespace-nowrap rounded-md  lg:h-full p-2'>
+            {children}
+            <ScrollBar orientation='horizontal' />
+          </ScrollArea>
         </div>
       </main>
     </div>

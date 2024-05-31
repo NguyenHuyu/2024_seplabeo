@@ -21,12 +21,13 @@ interface BreadcrumbsProps {
 export default function Breadcrumbs({ breadCrumbs }: BreadcrumbsProps) {
   const BreadCrumbItem = ({ name, url, bold, index, length }: BreadcrumbItem) => {
     return (
-      <li className='inline-flex items-center justify-start'>
+      <li className='inline-flex items-center justify-start pt-4'>
         <Link
           href={url}
           className={cn(
-            'italic hover:text-cyan-500 font-semibold text-[15px] md:text-[18px] pr-2 truncate max-w-[20rem]',
-            bold ? 'text-cyan-500' : 'text-black'
+            'italic hover:text-cyan-500 font-semibold text-[15px] md:text-[18px] pr-2 truncate max-w-[10rem] md:max-w-[20rem]',
+            bold ? 'text-cyan-500' : 'text-black',
+            index >= length - 1 && 'max-w-[7rem] truncate'
           )}
         >
           {name}

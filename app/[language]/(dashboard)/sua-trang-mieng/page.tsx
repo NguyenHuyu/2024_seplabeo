@@ -29,9 +29,9 @@ export default async function page({ params }: PageProps) {
   const { dairy_dessert } = await getDictionary(params.language)
 
   return (
-    <section className='bg-white py-10 md:py-20'>
+    <section className='bg-white min-h-screen'>
       <div className='container flex flex-col mx-auto bg-white'>
-        <div className='grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5'>
+        <div className='grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 gap-5'>
           <div className='flex flex-col justify-center col-span-1 text-center lg:text-start'>
             <div className='flex items-center justify-center mb-4 lg:justify-normal'>
               <Image
@@ -49,7 +49,7 @@ export default async function page({ params }: PageProps) {
               {dairy_dessert.descriptions.map((item, index) => (
                 <li
                   key={index}
-                  className='mb-1 text-base font-normal leading-7 lg:w-3/4 text-grey-900'
+                  className='mb-1 text-left text-base font-normal leading-7 text-grey-900'
                 >
                   {item}
                 </li>

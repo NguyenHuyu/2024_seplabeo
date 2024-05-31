@@ -44,10 +44,6 @@ export default async function page({ params }: IProps) {
   const product = await getProductById(params?.id || '')
   const breadCrumbs: IBreadcrumb[] = [
     {
-      name: 'Trang chủ',
-      url: `${route}`
-    },
-    {
       name: 'Đông trùng hạ thảo Quang Vy',
       url: `${route}/dong-trung-ha-thao-quang-vy`
     },
@@ -58,9 +54,9 @@ export default async function page({ params }: IProps) {
     }
   ]
   return (
-    <div className='max-w-5xl mx-auto'>
+    <div className='px-4 md:max-w-5xl mx-auto'>
       <Breadcrumbs breadCrumbs={breadCrumbs} />
-      <div className='m-4'>
+      <div className='m-1'>
         <SingleProduct id={params?.id || ''} />
 
         <Suspense fallback={<RecommendedProductsSkeleton />}>

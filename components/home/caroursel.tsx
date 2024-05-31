@@ -41,7 +41,7 @@ export default function Carousels({ banner }: CarouselsProps) {
             showThumbs={false}
           >
             {images.map((imageUrl, index: number) => (
-              <div key={index} className='relative h-full object-cover'>
+              <div key={index} className='relative'>
                 <Image
                   width={3000}
                   height={3000}
@@ -49,7 +49,7 @@ export default function Carousels({ banner }: CarouselsProps) {
                   quality={100}
                   src={imageUrl?.imageUrl[0]}
                   alt={`Image ${index}`}
-                  className='object-cover duration-200 md:max-h-[28rem] w-full'
+                  className='object-cover duration-200 max-h-[14rem] md:max-h-[28rem] w-full'
                 />
                 <span className='absolute text-xl md:text-6xl top-[30%] md:top-[20%] z-40 left-[4%] md:left-[10%] font-serif md:w-[24rem] md:space-y-4'>
                   <div className='flex justify-center items-center font-serif space-y-6'>
@@ -62,7 +62,7 @@ export default function Carousels({ banner }: CarouselsProps) {
 
                   <div className='flex justify-center items-center font-serif space-y-6'>
                     <Link
-                      href={`/${params}/company`}
+                      href={`/${params}/cong-ty`}
                       className='absolute text-sm md:text-xl top-[100%] z-40 left-[35%] font-serif  border border-[#3e90fa]  py-2 px-4 bg-transparent text-[#197cfa] font-semibold   rounded hover:bg-[#197cfa] hover:text-white hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0'
                     >
                       {params === 'en' ? 'Discover' : 'Khám phá'}

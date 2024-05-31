@@ -1,10 +1,10 @@
 import { getProducts } from '@/actions/product.action'
 import { IProps } from '@/app/[language]/layout'
-import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/dictionaries'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Pagination from '../Pagination'
 
 interface Props {
   params: IProps['params']
@@ -24,17 +24,16 @@ export default async function Product({ params, searchParams }: Props) {
   const { cordyceps } = await getDictionary(params.language)
 
   return (
-    <div className='container'>
-      <h2 className='w-full my-4 text-5xl font-bold leading-tight text-center text-[#bf1f2f]'>
+    <div className='container mx-auto'>
+      <h2 className='w-full text-3xl md:text-5xl font-bold leading-tight text-center text-[#bf1f2f]'>
         {cordyceps.product}
       </h2>
-
       <div className='max-w-5xl mx-auto w-full rounded-xl p-6'>
-        <div className='grid grid-cols-3 gap-4'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
           {products.data.map((item) => (
             <div
               key={item.id}
-              className='flex flex-col w-80 bg-slate-50 rounded-2xl border-2 border-gray-300 shadow-lg overflow-hidden'
+              className='flex flex-col md:w-80 bg-slate-50 rounded-2xl border-2 border-gray-300 shadow-lg overflow-hidden'
             >
               <div className=''>
                 <div className='relative w-full mb-3 z-40 border-b'>
@@ -73,6 +72,7 @@ export default async function Product({ params, searchParams }: Props) {
             </div>
           ))}
         </div>
+        <Pagination pages={products.page} pageSize={products.total} />
       </div>
     </div>
   )

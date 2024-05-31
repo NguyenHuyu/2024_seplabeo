@@ -17,13 +17,10 @@ export const publicRoutes = [
 export const adminRoutes = [
   '/admin',
   '/admin/banner',
-  '/admin/banner',
-  '/admin/news',
   '/admin/news',
   '/admin/product',
-  '/admin/product',
-  '/admin/product/create',
-  '/admin/product/create'
+  '/admin/image',
+  '/admin/video'
 ]
 
 export const apiAuthPrefix = '/api/auth'

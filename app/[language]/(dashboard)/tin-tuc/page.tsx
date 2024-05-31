@@ -14,7 +14,7 @@ export default async function Blog({ searchParams, params }: IProps) {
   })
 
   return (
-    <div className='mx-auto max-w-5xl py-10'>
+    <div className='mx-auto container md:max-w-5xl py-10'>
       <h1 className='font-bold text-4xl md:text-5xl max-w-xl gradient-text pb-4'>
         Tin tức
       </h1>

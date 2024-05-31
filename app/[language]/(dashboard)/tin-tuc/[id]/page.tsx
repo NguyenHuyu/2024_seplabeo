@@ -63,7 +63,7 @@ export default async function page({ params }: IProps) {
             </h2>
           </div>
         </div>
-        <div className=' mx-auto md:border md:rounded '>
+        <div className='px-4 md:px-0 mx-auto md:border md:rounded '>
           <Image
             src={data?.imageUrl}
             width={1000}
@@ -75,7 +75,7 @@ export default async function page({ params }: IProps) {
           />
         </div>
         <div className='flex flex-col lg:flex-row lg:space-x-12'>
-          <div className='px-4 lg:px-0 text-gray-700 text-lg leading-relaxed w-full'>
+          <div className='px-4 lg:px-0 text-gray-700 text-lg leading-relaxed w-full text-justify'>
             <RenderTiptap news={data} />
           </div>
         </div>

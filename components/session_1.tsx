@@ -35,28 +35,17 @@ export const works: Artwork[] = [
 export default async function Session1({ params }: Session1Props) {
   const { center } = await getDictionary(params.language)
   return (
-    <section className='mx-auto md:max-w-7xl md:space-y-16'>
+    <section className='mx-auto md:max-w-7xl py-10 md:space-y-16'>
       <div className='mx-auto'>
         <div className='relative z-40 container mx-auto h-full'>
-          <div className='px-4 py-4 lg:px-2 lg:pt-20'>
+          <div className='md:p-4 lg:px-2 lg:pt-20'>
             <div className='grid gap-10 lg:grid-cols-2 md:mx-24'>
               <div className='flex md:flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg'>
-                <div className='max-w-xl mb-6'>
-                  <h2 className='max-w-lg mb-3 font-sans md:text-5xl font-bold leading-normal'>
-                    {center.title_1}
-                  </h2>
-                </div>
-                <div>
-                  <div className='inline-flex items-center justify-start w-full font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800'>
-                    {center.title_2}
-                    <svg
-                      className='inline-block w-3 ml-2'
-                      fill='currentColor'
-                      viewBox='0 0 12 12'
-                    >
-                      <path d='M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z'></path>
-                    </svg>
-                  </div>
+                <h2 className='max-w-lg mb-3 font-bold text-xl md:text-4xl'>
+                  {center.title_1}
+                </h2>
+                <div className='inline-flex text-base md:text-xl font-normal items-center justify-start w-full  transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800'>
+                  {center.title_2}
                 </div>
               </div>
               <div className='flex items-center justify-center w-full -mx-4 lg:pl-10'>
@@ -91,7 +80,7 @@ export default async function Session1({ params }: Session1Props) {
         </div>
       </div>
 
-      <div className='py-10 max-w-5xl mx-auto'>
+      <div className='py-10 pl-6 md:pl-0 mx-auto'>
         <ScrollArea className='w-full whitespace-nowrap rounded-md border shadow-lg'>
           <div className='flex w-max space-x-4 p-2'>
             {params.language === 'vi'

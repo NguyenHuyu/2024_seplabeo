@@ -1,9 +1,25 @@
 'use client'
 import { Link } from 'next-view-transitions'
-import { Menu, Package2 } from 'lucide-react'
+import LinkMobile from 'next/link'
+import {
+  Building,
+  Contact,
+  Cookie,
+  CupSoda,
+  CupSodaIcon,
+  EarthLock,
+  Fish,
+  GlassWater,
+  Home,
+  LogIn,
+  Menu,
+  Package2,
+  Ribbon,
+  Salad
+} from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import React from 'react'
+import React, { useState } from 'react'
 import LocaleSwitcher from '@/components/switcher-locale'
 import LogoImage from '@/public/logo.png'
 import Image from 'next/image'
@@ -271,6 +287,121 @@ const navbarSEN = [
     subItems: []
   }
 ]
+const navbarMobileEN = [
+  {
+    label: 'Home page',
+    href: '/',
+    icon: <Home />
+  },
+  {
+    label: 'Company',
+    href: 'cong-ty',
+    icon: <Building />
+  },
+  {
+    label: 'Contact us',
+    href: 'lien-he',
+    icon: <Contact />
+  },
+  {
+    label: 'Beverage',
+    href: 'nuoc-giai-khat',
+    icon: <GlassWater />
+  },
+  {
+    label: 'Dairy dessert',
+    href: 'sua-trang-mieng',
+    icon: <CupSodaIcon />
+  },
+  {
+    label: 'Bakary and confectionery',
+    href: 'banh-keo',
+    icon: <Cookie />
+  },
+  {
+    label: 'Convenience food',
+    href: 'thuc-pham-tien-dung',
+    icon: <EarthLock />
+  },
+  {
+    label: 'Seafood and commodity',
+    href: 'hai-san-san-pham',
+    icon: <Fish />
+  },
+  {
+    label: 'Functional food',
+    href: 'thuc-pham-chuc-nang',
+    icon: <Salad />
+  },
+
+  {
+    label: 'Quang Vy Cordyceps',
+    href: 'dong-trung-ha-thao-quang-vy',
+    icon: <Ribbon />
+  },
+  {
+    label: 'Login',
+    href: 'auth/login',
+    icon: <LogIn />
+  }
+]
+const navbarMobileVI = [
+  {
+    label: 'Trang chủ',
+    href: '',
+    icon: <Home />
+  },
+  {
+    label: 'Công ty',
+    href: 'cong-ty',
+    icon: <Building />
+  },
+  {
+    label: 'Liên hệ',
+    href: 'lien-he',
+    icon: <Contact />
+  },
+  {
+    label: 'Nước giải khát',
+    href: 'nuoc-giai-khat',
+    icon: <GlassWater />
+  },
+  {
+    label: 'Sữa và tráng miệng',
+    href: 'sua-trang-mieng',
+    icon: <CupSodaIcon />
+  },
+  {
+    label: 'Bánh kẹo',
+    href: 'banh-keo',
+    icon: <Cookie />
+  },
+  {
+    label: 'Thực phẩm',
+    href: 'thuc-pham-tien-dung',
+    icon: <EarthLock />
+  },
+  {
+    label: 'Hải sản và sản phẩm',
+    href: 'hai-san-san-pham',
+    icon: <Fish />
+  },
+  {
+    label: 'Thực phẩm chức năng',
+    href: 'thuc-pham-chuc-nang',
+    icon: <Salad />
+  },
+  {
+    label: 'Đông trùng hạ thảo Quang Vy',
+    href: 'dong-trung-ha-thao-quang-vy',
+    icon: <Ribbon />
+  },
+  {
+    label: 'Đăng nhập',
+    href: 'login',
+    icon: <LogIn />
+  }
+]
 
 interface HeaderProps {
   params: {
@@ -281,12 +412,19 @@ interface HeaderProps {
 
 export default function Header({ params, session }: HeaderProps) {
   const pathName = usePathname()
-
+  const [isOpen, setIsOpen] = useState<boolean>(false)
   const itemSelectedNavbarData = {
     vi: session ? navbarSVI : navbarVI,
     en: session ? navbarSEN : navbarEN
   }
+
+  const itemSelectedMobileNavbarData = {
+    vi: navbarMobileVI,
+    en: navbarMobileEN
+  }
+
   const selectedNavbarData = itemSelectedNavbarData[params.language]
+  const selectedNavbarDataMobile = itemSelectedMobileNavbarData[params.language]
 
   return (
     <div className='flex w-full flex-col'>
@@ -353,7 +491,7 @@ export default function Header({ params, session }: HeaderProps) {
             )
           })}
         </nav>
-        <Sheet>
+        <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
             <Button variant='ghost' size='icon' className='shrink-0 md:hidden'>
               <Menu className='h-5 w-5' />
@@ -361,26 +499,30 @@ export default function Header({ params, session }: HeaderProps) {
             </Button>
           </SheetTrigger>
           <SheetContent side='left'>
-            <nav className='grid gap-6 text-lg font-medium'>
-              <Link href='#' className='flex items-center gap-2 text-lg font-semibold'>
-                <Package2 className='h-6 w-6' />
-                <span className='sr-only'>Acme Inc</span>
+            <nav className='grid gap-3 font-medium'>
+              <Link
+                href={`/${params.language}`}
+                className='md:flex items-center gap-2 text-lg font-semibold md:text-base'
+              >
+                <Image
+                  src={LogoImage}
+                  width={1000}
+                  height={1000}
+                  alt='logo'
+                  className='w-full'
+                />
               </Link>
-              <Link href='#' className='hover:text-foreground'>
-                Dashboard
-              </Link>
-              <Link href='#' className='text-muted-foreground hover:text-foreground'>
-                Orders
-              </Link>
-              <Link href='#' className='text-muted-foreground hover:text-foreground'>
-                Products
-              </Link>
-              <Link href='#' className='text-muted-foreground hover:text-foreground'>
-                Customers
-              </Link>
-              <Link href='#' className='text-muted-foreground hover:text-foreground'>
-                Analytics
-              </Link>
+              {selectedNavbarDataMobile.map((item) => (
+                <nav key={item.href} className='grid gap-1 text-base font-medium'>
+                  <LinkMobile
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className='hover:text-foreground flex items-center gap-2'
+                  >
+                    {item?.icon} {item.label}
+                  </LinkMobile>
+                </nav>
+              ))}
             </nav>
           </SheetContent>
         </Sheet>
@@ -388,7 +530,7 @@ export default function Header({ params, session }: HeaderProps) {
           href='/'
           className='flex md:hidden items-center gap-2 text-lg font-semibold md:text-base'
         >
-          <Image src={LogoImage} width={1000} height={1000} alt='logo' className='w-48' />
+          <Image src={LogoImage} width={1000} height={1000} alt='logo' className='w-96' />
         </Link>
         <div className='flex md:hidden lg:flex w-full justify-end items-center gap-4 md:ml-auto md:gap-2 lg:gap-4'>
           <LocaleSwitcher />
