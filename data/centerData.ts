@@ -3,8 +3,8 @@ import I1 from '@/public/a1.png'
 import I2 from '@/public/a2.png'
 import I3 from '@/public/a3.png'
 import I4 from '@/public/a4.png'
-import I5 from '@/public/a5.png'
-import I6 from '@/public/a6.png'
+import I5 from '@/public/a5.jpg'
+import I6 from '@/public/a6.jpg'
 
 export interface CenterDataItem {
   title: string

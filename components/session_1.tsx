@@ -35,11 +35,11 @@ export const works: Artwork[] = [
 export default async function Session1({ params }: Session1Props) {
   const { center } = await getDictionary(params.language)
   return (
-    <section className='mx-auto md:max-w-7xl py-10 md:space-y-16'>
+    <section className='mx-auto md:max-w-5xl py-10 md:space-y-16'>
       <div className='mx-auto'>
-        <div className='relative z-40 container mx-auto h-full'>
+        <div className='relative z-40 mx-auto h-full'>
           <div className='md:p-4 lg:px-2 lg:pt-20'>
-            <div className='grid gap-10 lg:grid-cols-2 md:mx-24'>
+            <div className='grid gap-10 lg:grid-cols-2 md:mx-2'>
               <div className='flex md:flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg'>
                 <h2 className='max-w-lg mb-3 font-bold text-xl md:text-4xl'>
                   {center.title_1}

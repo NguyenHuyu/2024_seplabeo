@@ -23,8 +23,8 @@ export default function ListNews({ item, params }: Props) {
           src={item.image}
           alt={`Photo by ${item.title}`}
           className='w-full h-[190px] object-cover'
-          width={1000}
-          height={1000}
+          width={2000}
+          height={2000}
         />
       </div>
       <Link href={`/${params.language}${item.url}`}>
