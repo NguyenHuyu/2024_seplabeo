@@ -86,8 +86,8 @@ export default async function ContactPage({ params }: Props) {
       </div>
       <section className='pb-10 bg-blueGray-200'>
         <div className='mx-auto w-full max-w-lg pb-20 p-4'>
-          <form action='https://api.web3forms.com/submit' className='mt-10 relative '>
-            <input type='hidden' name='access_key' value='YOUR_ACCESS_KEY_HERE' />
+          <form className='mt-10 relative '>
+            <input type='hidden' />
             <div className='grid gap-10 sm:grid-cols-2'>
               <div className='relative z-0'>
                 <input
