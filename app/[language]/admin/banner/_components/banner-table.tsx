@@ -38,7 +38,6 @@ export default function TableBanner({ banners }: Props) {
           <tr>
             <th>Tên banner</th>
             <th>Hình ảnh</th>
-            <th>Ngày tạo</th>
             <th>Tùy chọn</th>
           </tr>
         </thead>
@@ -57,7 +56,6 @@ export default function TableBanner({ banners }: Props) {
                       className='w-40 '
                     />
                   </td>
-                  <td className='text-center truncate w-40'>{String(item?.createdAt)}</td>
                   <td className='text-center cursor-pointer'>
                     <AlertDialog>
                       <AlertDialogTrigger>

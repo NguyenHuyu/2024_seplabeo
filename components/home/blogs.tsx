@@ -79,7 +79,6 @@ export default async function Blog({
               </div>
             </ul>
           </div>
-          <Pagination pages={data.page} pageSize={data.totalPages} />
         </>
       )}
     </div>

@@ -24,7 +24,7 @@ export default async function AdminPage({ params, searchParams }: IProps) {
 
   const listButton: IListButton[] = [
     {
-      name: 'Tạo mới sản phẩm',
+      name: 'Tạo mới',
       url: `${route}/create`,
       file: false
     }

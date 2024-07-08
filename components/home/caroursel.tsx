@@ -55,7 +55,7 @@ export default function Carousels({ banner }: CarouselsProps) {
                   <div className='flex justify-center items-center font-serif space-y-6'>
                     <h1 className='font-serif text-2xl md:text-6xl text-center text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-blue-600 via-30% to-red-500 z-30'>
                       {params === 'en'
-                        ? 'Chào mừng, SepLaBeo tại Việt Nam'
+                        ? 'Welcome to SepLaBeo in Viet Nam'
                         : 'Chào mừng, SepLaBeo tại Việt Nam'}
                     </h1>
                   </div>
