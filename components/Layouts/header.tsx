@@ -14,6 +14,7 @@ import {
   LogIn,
   Menu,
   Package2,
+  PackageSearch,
   Ribbon,
   Salad
 } from 'lucide-react'
@@ -299,9 +300,9 @@ const navbarMobileEN = [
     icon: <Building />
   },
   {
-    label: 'Contact us',
-    href: 'lien-he',
-    icon: <Contact />
+    label: 'Products',
+    href: 'san-pham',
+    icon: <PackageSearch />
   },
   {
     label: 'Beverage',
@@ -340,6 +341,11 @@ const navbarMobileEN = [
     icon: <Ribbon />
   },
   {
+    label: 'Contact us',
+    href: 'lien-he',
+    icon: <Contact />
+  },
+  {
     label: 'Login',
     href: 'auth/login',
     icon: <LogIn />
@@ -357,9 +363,9 @@ const navbarMobileVI = [
     icon: <Building />
   },
   {
-    label: 'Liên hệ',
-    href: 'lien-he',
-    icon: <Contact />
+    label: 'Sản phẩm',
+    href: 'san-pham',
+    icon: <PackageSearch />
   },
   {
     label: 'Nước giải khát',
@@ -395,6 +401,11 @@ const navbarMobileVI = [
     label: 'Đông trùng hạ thảo Quang Vy',
     href: 'dong-trung-ha-thao-quang-vy',
     icon: <Ribbon />
+  },
+  {
+    label: 'Liên hệ',
+    href: 'lien-he',
+    icon: <Contact />
   },
   {
     label: 'Đăng nhập',
